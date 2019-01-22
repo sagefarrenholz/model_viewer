@@ -12,6 +12,15 @@
 		A806150A21EC30AC008BC777 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A806150921EC30A4008BC777 /* Cocoa.framework */; };
 		A806150D21EC313F008BC777 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A806150B21EC3138008BC777 /* CoreVideo.framework */; };
 		A806150E21EC3145008BC777 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A806150C21EC3138008BC777 /* IOKit.framework */; };
+		A8BC02B121F0F8D000912344 /* filehandling.h in Sources */ = {isa = PBXBuildFile; fileRef = A8BC02A821F0F8C600912344 /* filehandling.h */; };
+		A8BC02B221F0F8D000912344 /* display.c in Sources */ = {isa = PBXBuildFile; fileRef = A8BC02A921F0F8C600912344 /* display.c */; };
+		A8BC02B321F0F8D000912344 /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = A8BC02AA21F0F8C600912344 /* state.c */; };
+		A8BC02B421F0F8D000912344 /* errorhandling.c in Sources */ = {isa = PBXBuildFile; fileRef = A8BC02AB21F0F8C600912344 /* errorhandling.c */; };
+		A8BC02B521F0F8D000912344 /* display.h in Sources */ = {isa = PBXBuildFile; fileRef = A8BC02AC21F0F8C600912344 /* display.h */; };
+		A8BC02B621F0F8D000912344 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A8BC02AD21F0F8C600912344 /* main.c */; };
+		A8BC02B721F0F8D000912344 /* filehandling.c in Sources */ = {isa = PBXBuildFile; fileRef = A8BC02AE21F0F8C600912344 /* filehandling.c */; };
+		A8BC02B821F0F8D000912344 /* errorhandling.h in Sources */ = {isa = PBXBuildFile; fileRef = A8BC02AF21F0F8C600912344 /* errorhandling.h */; };
+		A8BC02B921F0F8D000912344 /* state.h in Sources */ = {isa = PBXBuildFile; fileRef = A8BC02B021F0F8C600912344 /* state.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,21 +36,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A804812621F11339004BC141 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = ../../../../../usr/local/lib/libSOIL.a; sourceTree = "<group>"; };
+		A804812A21F1262F004BC141 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		A806150321EC20B7008BC777 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		A806150521EC2701008BC777 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
 		A806150921EC30A4008BC777 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A806150B21EC3138008BC777 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		A806150C21EC3138008BC777 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		A8BC026021F0D56800912344 /* opengl-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "opengl-test"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8BC028B21F0F4F300912344 /* filehandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filehandling.h; sourceTree = "<group>"; };
-		A8BC028C21F0F4F300912344 /* display.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = display.c; sourceTree = "<group>"; };
-		A8BC028D21F0F4F300912344 /* state.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = state.c; sourceTree = "<group>"; };
-		A8BC028E21F0F4F300912344 /* errorhandling.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = errorhandling.c; sourceTree = "<group>"; };
-		A8BC028F21F0F4F300912344 /* display.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = display.h; sourceTree = "<group>"; };
-		A8BC029021F0F4F300912344 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		A8BC029121F0F4F300912344 /* filehandling.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = filehandling.c; sourceTree = "<group>"; };
-		A8BC029221F0F4F300912344 /* errorhandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = errorhandling.h; sourceTree = "<group>"; };
-		A8BC029321F0F4F300912344 /* state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		A8BC029B21F0F7DF00912344 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSOIL.a; path = lib/libSOIL.a; sourceTree = "<group>"; };
+		A8BC02A821F0F8C600912344 /* filehandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filehandling.h; sourceTree = "<group>"; };
+		A8BC02A921F0F8C600912344 /* display.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = display.c; sourceTree = "<group>"; };
+		A8BC02AA21F0F8C600912344 /* state.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = state.c; sourceTree = "<group>"; };
+		A8BC02AB21F0F8C600912344 /* errorhandling.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = errorhandling.c; sourceTree = "<group>"; };
+		A8BC02AC21F0F8C600912344 /* display.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = display.h; sourceTree = "<group>"; };
+		A8BC02AD21F0F8C600912344 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A8BC02AE21F0F8C600912344 /* filehandling.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = filehandling.c; sourceTree = "<group>"; };
+		A8BC02AF21F0F8C600912344 /* errorhandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = errorhandling.h; sourceTree = "<group>"; };
+		A8BC02B021F0F8C600912344 /* state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		A8BC02BD21F1073E00912344 /* pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pizza.jpg; sourceTree = "<group>"; };
+		A8F7AB0221F2F2A700306A58 /* frag.sdr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frag.sdr; sourceTree = "<group>"; };
+		A8F7AB0321F2F2A700306A58 /* vertex.sdr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.sdr; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,20 +64,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A806150421EC26E8008BC777 /* OpenGL.framework in Frameworks */,
 				A806150E21EC3145008BC777 /* IOKit.framework in Frameworks */,
 				A806150D21EC313F008BC777 /* CoreVideo.framework in Frameworks */,
 				A806150A21EC30AC008BC777 /* Cocoa.framework in Frameworks */,
 				A806150821EC2DC1008BC777 /* libglfw3.a in Frameworks */,
-				A806150421EC26E8008BC777 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A804812821F124E1004BC141 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A804812A21F1262F004BC141 /* stb_image.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		A806150221EC20B7008BC777 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8BC029B21F0F7DF00912344 /* libSOIL.a */,
+				A804812621F11339004BC141 /* libSOIL.a */,
 				A806150B21EC3138008BC777 /* CoreVideo.framework */,
 				A806150C21EC3138008BC777 /* IOKit.framework */,
 				A806150921EC30A4008BC777 /* Cocoa.framework */,
@@ -72,29 +97,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A8BC028A21F0F4F300912344 /* src */ = {
+		A8A75FE121F3A5FE0016AEDC /* filehandling */ = {
 			isa = PBXGroup;
 			children = (
-				A8BC028B21F0F4F300912344 /* filehandling.h */,
-				A8BC028C21F0F4F300912344 /* display.c */,
-				A8BC028D21F0F4F300912344 /* state.c */,
-				A8BC028E21F0F4F300912344 /* errorhandling.c */,
-				A8BC028F21F0F4F300912344 /* display.h */,
-				A8BC029021F0F4F300912344 /* main.c */,
-				A8BC029121F0F4F300912344 /* filehandling.c */,
-				A8BC029221F0F4F300912344 /* errorhandling.h */,
-				A8BC029321F0F4F300912344 /* state.h */,
+				A8BC02A821F0F8C600912344 /* filehandling.h */,
+				A8BC02AE21F0F8C600912344 /* filehandling.c */,
+			);
+			name = filehandling;
+			sourceTree = "<group>";
+		};
+		A8A75FE321F3A6140016AEDC /* errorhandling */ = {
+			isa = PBXGroup;
+			children = (
+				A8BC02AB21F0F8C600912344 /* errorhandling.c */,
+				A8BC02AF21F0F8C600912344 /* errorhandling.h */,
+			);
+			name = errorhandling;
+			sourceTree = "<group>";
+		};
+		A8A75FE421F3A6280016AEDC /* display */ = {
+			isa = PBXGroup;
+			children = (
+				A8BC02A921F0F8C600912344 /* display.c */,
+				A8BC02AC21F0F8C600912344 /* display.h */,
+			);
+			name = display;
+			sourceTree = "<group>";
+		};
+		A8BC02A721F0F8C600912344 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A8A75FE421F3A6280016AEDC /* display */,
+				A8A75FE321F3A6140016AEDC /* errorhandling */,
+				A8A75FE121F3A5FE0016AEDC /* filehandling */,
+				A8BC02AA21F0F8C600912344 /* state.c */,
+				A8BC02AD21F0F8C600912344 /* main.c */,
+				A8BC02B021F0F8C600912344 /* state.h */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		A8BC02BB21F0FF7F00912344 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				A8BC02BD21F1073E00912344 /* pizza.jpg */,
+			);
+			path = textures;
 			sourceTree = "<group>";
 		};
 		A8DD9EDD21EC053B00692623 = {
 			isa = PBXGroup;
 			children = (
-				A8BC028A21F0F4F300912344 /* src */,
+				A8F7AB0121F2F2A700306A58 /* shaders */,
+				A804812821F124E1004BC141 /* include */,
+				A8BC02BB21F0FF7F00912344 /* textures */,
+				A8BC02A721F0F8C600912344 /* src */,
 				A806150221EC20B7008BC777 /* Frameworks */,
 				A8BC026021F0D56800912344 /* opengl-test */,
 			);
+			sourceTree = "<group>";
+		};
+		A8F7AB0121F2F2A700306A58 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				A8F7AB0221F2F2A700306A58 /* frag.sdr */,
+				A8F7AB0321F2F2A700306A58 /* vertex.sdr */,
+			);
+			path = shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BC02B121F0F8D000912344 /* filehandling.h in Sources */,
+				A8BC02B221F0F8D000912344 /* display.c in Sources */,
+				A8BC02B321F0F8D000912344 /* state.c in Sources */,
+				A8BC02B421F0F8D000912344 /* errorhandling.c in Sources */,
+				A8BC02B521F0F8D000912344 /* display.h in Sources */,
+				A8BC02B621F0F8D000912344 /* main.c in Sources */,
+				A8BC02B721F0F8D000912344 /* filehandling.c in Sources */,
+				A8BC02B821F0F8D000912344 /* errorhandling.h in Sources */,
+				A8BC02B921F0F8D000912344 /* state.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,26 +344,43 @@
 		A8DD9EEE21EC053B00692623 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /usr/local/include;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(PROJECT_DIR)/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYMROOT = "($BUILD_DIR)";
+				SYMROOT = build;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
 		A8DD9EEF21EC053B00692623 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = /usr/local/include;
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(PROJECT_DIR)/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYMROOT = "($BUILD_DIR)";
+				SYMROOT = build;
 			};
 			name = Release;
 		};

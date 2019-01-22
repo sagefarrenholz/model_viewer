@@ -27,6 +27,7 @@ char* openFile(const char* fileloc) {
     
     //Check if the file was correctly opened
     if(file == NULL) {
+        perror("error:");
         printerr(4, "FILE OPEN ERROR: ");
         printf(fileloc);
         assert(1);
