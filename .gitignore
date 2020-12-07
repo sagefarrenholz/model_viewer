@@ -3,5 +3,10 @@ bin
 cglm
 models
 shaders
-CPP
+CppProperties*
 opengl_test*
+lib
+resourche.h
+x64
+build
+log
