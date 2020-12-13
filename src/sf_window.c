@@ -32,11 +32,11 @@ SF_Window* sf_init_window(int width, int height, const char* title) {
 		return NULL;
 	}
 
-    if (width <= 0) width = 640;
-    if (height <= 0) height = 480;
+    if (width <= 0) width = 1920;
+    if (height <= 0) height = 1080;
     if (title == NULL) title = "Super Fast Engine";
 
-    GLFWwindow* _glfw_window = glfwCreateWindow(width, height, title, NULL, NULL);
+    GLFWwindow* _glfw_window = glfwCreateWindow(width, height, title, /*glfwGetPrimaryMonitor()*/ NULL, NULL);
 	if (_glfw_window == NULL) {
 		sf_print_error(SF_UNSPECIFIED_ERROR, "Could not create glfw window in sf_init_window");
 		sf_destroy_window(win);

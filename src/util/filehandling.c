@@ -7,6 +7,7 @@
 //
 
 #include "filehandling.h"
+#include "memory.h"
 
 #define MAXCONST 64
 
@@ -47,7 +48,7 @@ char* readFile(const char* fileloc) {
 	//If the maximum amount of files in memory is met: free the oldest piece of memory
 	if (count == MAXCONST) {
 		printerr(3, "File Buffer Full: overwriting files.\n");
-		free(filebuffers[0]);
+		mem_free(filebuffers[0]);
 		count = 0;
 	}
 
@@ -74,7 +75,7 @@ char* readFile(const char* fileloc) {
 
 	//Reserve memory for buffer and read our file into it, 1 Byte is added as a terminator
 	char* filebuffer = (char*) mem_malloc(flen + 1);
-	filebuffer[flen] = 0;
+	filebuffer[flen] = '\0';
 
 	//Read the file data into the buffer
 	if (fread(filebuffer, sizeof(char), (size_t) flen, file) != flen) {
@@ -98,12 +99,17 @@ char* readFile(const char* fileloc) {
     return filebuffer;
 }
 
+//Close a specific file
+void closeFile() {
+
+}
+
 //Free all files in memory
 void closeFiles(void) {
     //Go down the buffer list freeing memory until we free the first entry;
     do {
-		if (filebuffers[count]) 
-			free(filebuffers[count]);
+		mem_free(filebuffers[count - 1]);
+		filebuffers[count - 1] = NULL;
         count--;
     } while (count > 0);
 }

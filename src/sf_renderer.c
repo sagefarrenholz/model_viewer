@@ -76,3 +76,7 @@ void sf_destroy_renderer(SF_Renderer* ren) {
 	glDeleteProgram(ren->program);
 	mem_free(ren);
 }
+
+GLint sf_load_texture(const char* texture_file) {
+
+}

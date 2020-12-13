@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "memory.h"
 #include "errorhandling.h"
 
 //Create a blank file and return a pointer to it.
@@ -33,7 +32,7 @@ Rewrite this function. Doing so relies on adding singular entry lookups
 in memory.c. Awaiting that functionality.
 */
 //Close all files in the buffer.
-//void closeFiles(void);
+void closeFiles(void);
 
 //Return size of a string (char array).
 size_t stringSize(const char* string);

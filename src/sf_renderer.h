@@ -37,5 +37,7 @@ void sf_finalize_shaders(SF_Renderer* renderer);
 // Destroys the given renderer
 void sf_destroy_renderer(SF_Renderer* renderer);
 
+// Load a texture
+GLint sf_load_texture(const char* filename);
 
 #endif sf_renderer_h

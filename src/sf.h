@@ -3,6 +3,7 @@
 
 #include "sf_window.h"
 #include "sf_math.h"
+#include "sf_error.h"
 
 // Initialize the engine
 void sf_init(void);
