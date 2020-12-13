@@ -6,7 +6,12 @@ shaders/
 CppProperties*
 opengl_test*
 lib/
-resourche.h/
+resourche.h
 x64/
 build/
 log/
+x64/Debug/
+tinyobjloader-c/
+CppProperties.json
+3
+resource.h
